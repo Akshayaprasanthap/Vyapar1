@@ -111,7 +111,9 @@
                                     <!-- Add more financial years if necessary -->
                                 </select>
                             </form>
-                            <button style="margin-left: 970px;" title="close" class="btn btn-close" id="closeButton"></button>
+                            <!-- <button style="margin-left: 970px;" title="close" class="btn btn-close" id="closeButton"></button> -->
+                            <button style="margin-left: 970px;" title="close" class="btn btn-close"
+                                    id="closeButton" onclick="javascript:history.go(-1)"></button>
                         </div>
                         <form action="#" method="post" enctype="multipart/form-data" novalidate id="gstr9">
                             {% csrf_token %}
@@ -1955,13 +1957,13 @@
 
         html2pdf().set(opt).from(content).save();
     }
-    $(document).ready(function() {
-            // Add click event listener to the close button
-            $('#closeButton').click(function() {
-                // Navigate back to the previous page
-                window.history.back();
-            });
-        });
+    // $(document).ready(function() {
+    //         // Add click event listener to the close button
+    //         $('#closeButton').click(function() {
+    //             // Navigate back to the previous page
+    //             window.history.back();
+    //         });
+    //     });
 
 
 

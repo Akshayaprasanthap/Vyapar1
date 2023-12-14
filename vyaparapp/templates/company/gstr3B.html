@@ -196,7 +196,7 @@
         
                       
                                 <button style="margin-left: 775px;" title="close" class="btn btn-close"
-                                    id="closeButton"></button>
+                                    id="closeButton" onclick="javascript:history.go(-1)"></button>
                                     <!-- </form> -->
                             </div>
                     
@@ -773,13 +773,13 @@
             }
 
 
-            $(document).ready(function () {
-                // Add click event listener to the close button
-                $('#closeButton').click(function () {
-                    // Navigate back to the previous page
-                    window.history.back();
-                });
-            });
+            // $(document).ready(function () {
+            //     // Add click event listener to the close button
+            //     $('#closeButton').click(function () {
+            //         // Navigate back to the previous page
+            //         window.history.go(-1);
+            //     });
+            // });
 
 
 
